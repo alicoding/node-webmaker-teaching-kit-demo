@@ -1,0 +1,12 @@
+{
+  "name": "node-webmaker-teaching-kit-demo",
+  "version": "0.0.1",
+  "description": "Webmaker Teaching Kit L10N Demo",
+  "dependencies": {
+    "express": "3.4.8",
+    "webmaker-i18n": "https://github.com/mozilla/node-webmaker-i18n/archive/v0.3.8.tar.gz",
+    "nunjucks": "1.0.1"
+  },
+  "author": "Ali Al Dallal",
+  "license": "MPL-2.0"
+}

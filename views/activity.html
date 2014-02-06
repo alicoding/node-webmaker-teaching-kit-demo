@@ -1,0 +1,88 @@
+{% extends "index.html" %}
+{% block content %}
+<div class="wrapper">
+  <header id="header">
+    <div class="note-paper-side"></div>
+    <div class="note-paper"></div>
+    <div id="teachingkit-banner">
+      {{ gettext("activity") }}
+    </div>
+    <div id="header-img">
+      <img alt="Header Image" height="180" src="https://stuff.webmaker.org/teach-assets/kits/images/icebreaker.png" width="180">
+    </div>
+    <div id="header-content">
+      <hgroup id="header-group">
+        <h1>{{ gettext ("name") }}</h1>
+        <h2>{{ gettext ("description") }} </h2>
+      </hgroup>
+      <div id="metadata">
+        <span id="made-by">{{ gettext ("madeBy") }}</a></span>
+      </div>
+    </div>
+  </header>
+
+  <div id="content">
+    <div id="left-side">
+
+      <section class="step-section">
+        <h1 class="big-green-title">{{ gettext ("bigGreenTitle") }}</h1>
+        <ol>
+          <li>
+          <p>
+         {{ gettext ("paragraphOne") }}
+          </p>
+          <div class="example-div">
+            <ul>
+              <li><strong>{{ gettext ("Participatory") }}</strong> {{ gettext ("ParticipatoryDescription") }} </li>
+              <li><strong>{{ gettext ("Purposeful") }}</strong> {{ gettext ("PurposefulDescription") }}
+              </li>
+              <li><strong>{{ gettext ("Productive") }}</strong> {{ gettext ("ProductiveDescription") }}</li>
+            </ul>
+          </div>
+          </li>
+
+          <li>
+          <p>{{ gettext ("paragraphTwo") }}</p>
+          </li>
+
+          <li>
+          <p>{{ gettext ("paragraphThree") }}</p>
+          </li>
+        </ol>
+      </section>
+
+    </div>
+
+    <div id="right-side">
+      <section class="small-checkbox-section">
+        <h1><i class="icon-check-sign"></i> {{ gettext ("Materials") }}</h1>
+        <div>
+          <ul>
+            <li><input id="r4" type="checkbox"><label for="r4"></label> {{ gettext ("Pens") }}</li>
+            <li><input id="r5" type="checkbox"><label for="r5"></label> {{ gettext ("PostIts") }}</li>
+            <li><input id="r4" type="checkbox"><label for="r4"></label> {{ gettext ("Computer") }}</li>
+            <li><input id="r5" type="checkbox"><label for="r5"></label> {{ gettext ("WebAccess") }}</li>
+          </ul>
+        </div>
+      </section>
+      <section class="attention-section">
+        <h1><i class="icon-comments"></i> {{ gettext ("Discussion") }}</h1>
+        <div>{{ gettext ("DiscussionDescription") }}
+        </div>
+      </section>
+      <section class="teach-list">
+        <h1>{{ gettext ("RelatedActivities") }}</h1>
+        <div>
+          <ul>
+
+            <li><a href="http://foo.org/">{{ gettext ("IncludeLinks") }}</a></li>
+            <li><a href="http://foo.org/">{{ gettext ("resource") }}</a></li>
+            <li><a href="http://foo.org/">{{ gettext ("section") }}</a></li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
