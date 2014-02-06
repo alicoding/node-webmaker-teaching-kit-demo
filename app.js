@@ -23,6 +23,10 @@ app.use( i18n.middleware({
 }));
 
 app.get( "/", function( req, res ) {
+  res.render( "iframe.html" );
+});
+
+app.get( "/activity", function( req, res ) {
   res.render( "activity.html" );
 });
 
