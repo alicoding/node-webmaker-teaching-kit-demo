@@ -8,3 +8,6 @@ Server side webmaker teaching kit
 2. cd node-webmaker-teaching-kit-demo
 3. npm install
 4. node app.js
+
+
+Open this in your browser: http://localhost:8000
